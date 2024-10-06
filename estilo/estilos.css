@@ -1,1 +1,69 @@
 /* Daniel López Fernández UO289510 */
+
+/*Especifidad 001*/
+body {
+    font-family: "Century Gothic", sans-serif;
+    color: #818181;
+    background-color: #fff;
+}
+
+/*Especifidad 000*/
+*{
+    color:rgb(68, 68, 68);
+}
+
+/*Especifididad 001*/
+h1 {
+    color:rgb(255, 255, 255);
+    text-transform:uppercase;
+}
+
+/*Especifidad 001*/
+nav {
+    color:rgb(212, 211, 211);
+    font-size:large;
+}
+
+/*Especifidad 001*/
+h2 {
+    color:rgb(37, 37, 37);
+    font-size:x-large;
+}
+
+/*Especifidad 001*/
+h3 {
+    color:rgb(57, 57, 57);
+    font-weight:bold;
+}
+
+/*Especifidad 001*/
+p {
+    color:rgb(68, 68, 68);
+}
+
+/*Especifidad 001*/
+dt {
+    text-decoration: underline;
+    font-weight: normal;
+    font-style:oblique;
+}
+
+/*Especifidad 011*/
+header[id="encabezado"]{
+    background-color:#253452;
+}
+
+/*Especifidad 001*/
+header{
+    background-color:#E5E1E4;
+}
+
+/*Especifidad 010*/
+:link {
+    color:white;
+}
+
+/*Especifidad 010*/
+:visited{
+    color:rgb(153, 151, 190);
+}
