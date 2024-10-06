@@ -58,12 +58,12 @@ header{
     background-color:#E5E1E4;
 }
 
-/*Especifidad 010*/
-:link {
+/*Especifidad 020*/
+:link[id="navegacion"] {
     color:white;
 }
 
-/*Especifidad 010*/
-:visited{
+/*Especifidad 020*/
+:visited[id="navegacion"]{
     color:rgb(153, 151, 190);
 }
