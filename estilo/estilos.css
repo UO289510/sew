@@ -3,7 +3,7 @@
 /*Especifidad 001*/
 body {
     font-family: "Century Gothic", sans-serif;
-    color: #818181;
+    color: #575757;
     background-color: #fff;
 }
 
@@ -66,5 +66,5 @@ header{
 
 /*Especifidad 020*/
 :visited[id="navegacion"]{
-    color:rgb(153, 151, 190);
+    color:#CEC4B1;
 }
