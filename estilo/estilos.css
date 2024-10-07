@@ -10,12 +10,12 @@ body {
 /*Especifidad 000*/
 *{
     color:rgb(68, 68, 68);
+    /*background-color se hereda de body*/
 }
 
-/*Especifididad 001*/
-h1 {
-    color:rgb(255, 255, 255);
-    text-transform:uppercase;
+/*Especifidad 011*/
+header{
+    background-color:#253452;
 }
 
 /*Especifidad 001*/
@@ -24,10 +24,18 @@ nav {
     font-size:large;
 }
 
+/*Especifididad 001*/
+h1 {
+    color:rgb(255, 255, 255);
+    text-transform:uppercase;
+}
+
+
 /*Especifidad 001*/
 h2 {
     color:rgb(37, 37, 37);
     font-size:x-large;
+    background-color:#E5E1E4;
 }
 
 /*Especifidad 001*/
@@ -35,11 +43,14 @@ h3 {
     color:rgb(57, 57, 57);
     font-weight:bold;
     background-color:#E5E1E4;
+    /*background-color se hereda de body*/
 }
 
 /*Especifidad 001*/
 p {
     color:rgb(68, 68, 68);
+    /*background-color se hereda de body*/
+
 }
 
 /*Especifidad 001*/
@@ -49,22 +60,44 @@ dt {
     font-style:oblique;
 }
 
-/*Especifidad 011*/
-header[id="encabezado"]{
-    background-color:#253452;
+nav :link{
+    color:white;
 }
 
-/*Especifidad 001*/
-header{
-    background-color:#E5E1E4;
+nav :visited{
+    color:#CEC4B1;
 }
 
-/*Especifidad 020*/
+h1 :link{
+    color:white;
+    text-decoration:none;
+}
+
+h1 :visited{
+    color:white;
+    text-decoration:none;
+}
+
+/*Especifidad 020
 :link[id="navegacion"] {
     color:white;
 }
 
-/*Especifidad 020*/
+/*Especifidad 020
 :visited[id="navegacion"]{
     color:#CEC4B1;
 }
+
+/*Especifidad 020
+:link[id="inicio"] {
+    color:white;
+    text-decoration:none;
+}
+
+/*Especifidad 020
+:visited[id="inicio"] {
+    color:white;
+    text-decoration:none;
+}
+
+*/
