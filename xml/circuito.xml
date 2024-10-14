@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+
+
+<circuito>
+    <caracteristicas>
+        <caracteristica nombre="Circuito Internacional de Losail"
+         longitud="5380 metros (3,375 millas)"
+         anchura="12 metro"
+         localidad="Losail"
+         pais="Qatar"
+        />
+    </caracteristicas>
+
+    <carrera>
+        <infoCarrera>
+            <dato fecha="29 de Noviembre 2024" 
+                  horaEspañola="19.00h"
+                  vueltas="57"
+            />
+        </infoCarrera>
+    </carrera>
+</circuito>

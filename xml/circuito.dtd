@@ -1,0 +1,16 @@
+<!ELEMENT circuito (caracteristicas*, carrera)>
+<!ELEMENT caracteristicas (caracteristica*)>
+<!ELEMENT caracteristica (#PCDATA)>
+
+<!ELEMENT carrera (infoCarrera)>
+<!ELEMENT infoCarrera (dato*)>
+<!ELEMENT dato (#PCDATA)>
+
+<!ATTLIST caracteristica nombre CDATA #REQUIRED>
+<!ATTLIST caracteristica longitud CDATA #REQUIRED>
+<!ATTLIST caracteristica anchura CDATA #REQUIRED>
+<!ATTLIST dato fecha CDATA #REQUIRED>
+<!ATTLIST dato horaEspañola CDATA #REQUIRED>
+<!ATTLIST dato vueltas CDATA #REQUIRED>
+<!ATTLIST caracteristica localidad CDATA #REQUIRED>
+<!ATTLIST caracteristica pais CDATA #REQUIRED>
