@@ -1,16 +1,38 @@
-<!ELEMENT circuito (caracteristicas*, carrera)>
+<!ELEMENT circuito (caracteristicas, carrera, referencias, galeria, coordenadas)>
 <!ELEMENT caracteristicas (caracteristica*)>
 <!ELEMENT caracteristica (#PCDATA)>
 
 <!ELEMENT carrera (infoCarrera)>
-<!ELEMENT infoCarrera (dato*)>
+<!ELEMENT infoCarrera (dato+)>
 <!ELEMENT dato (#PCDATA)>
+
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
 
 <!ATTLIST caracteristica nombre CDATA #REQUIRED>
 <!ATTLIST caracteristica longitud CDATA #REQUIRED>
 <!ATTLIST caracteristica anchura CDATA #REQUIRED>
-<!ATTLIST dato fecha CDATA #REQUIRED>
-<!ATTLIST dato horaEspañola CDATA #REQUIRED>
-<!ATTLIST dato vueltas CDATA #REQUIRED>
 <!ATTLIST caracteristica localidad CDATA #REQUIRED>
 <!ATTLIST caracteristica pais CDATA #REQUIRED>
+<!ATTLIST dato info CDATA #REQUIRED>
+<!ATTLIST referencia enlace CDATA #REQUIRED>
+
+<!ELEMENT galeria (foto*)>
+<!ELEMENT foto EMPTY>
+<!ATTLIST foto imagen ENTITY #REQUIRED>
+
+<!ENTITY mapa SYSTEM "mapa.png" NDATA png>
+<!NOTATION png SYSTEM "imagen/png">
+
+<!ELEMENT coordenadas (salida, tramo*)>
+<!ELEMENT salida (#PCDATA)>
+<!ELEMENT tramo (#PCDATA)>
+
+<!ATTLIST salida latitud CDATA #REQUIRED>
+<!ATTLIST salida longitud CDATA #REQUIRED>
+<!ATTLIST salida altitud CDATA #REQUIRED>
+
+<!ATTLIST tramo distancia CDATA #REQUIRED>
+<!ATTLIST tramo coordenadas CDATA #REQUIRED>
+<!ATTLIST tramo altitud CDATA #REQUIRED>
+<!ATTLIST tramo sector CDATA #REQUIRED>

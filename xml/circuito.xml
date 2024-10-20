@@ -14,10 +14,182 @@
 
     <carrera>
         <infoCarrera>
-            <dato fecha="29 de Noviembre 2024" 
-                  horaEspañola="19.00h"
-                  vueltas="57"
-            />
+            <dato info="Fecha: 29 de Noviembre 2024"/>
+            <dato info="Hora Española: 19.00h"/>
+            <dato info="Vueltas: 57"/>
         </infoCarrera>
     </carrera>
+
+    <referencias>
+        <referencia enlace="https://www.dazn.com/es-ES/news/motor/circuito-losail-donde-esta-como-es-caracteristicas-llegar-fotos-escenario-gp-qatar-mundial-f1-motogp/a6znflaka6np1p41ckoiz6f7j"/> 
+        <referencia enlace="https://en.wikipedia.org/wiki/Lusail_International_Circuit"/>
+        <referencia enlace="https://www.circuitlosail.com/"/>
+    </referencias>
+
+    <galeria>
+        <foto imagen="mapa"/>
+    </galeria>
+
+    <coordenadas>
+        <salida latitud="25º 29' 12'' N"
+                longitud="51º 27' 03'' E"
+                altitud="12,31 m"/>
+        
+        <tramo distancia="430,03 m"
+                coordenadas="25º 29' 33''N 51º 26' 51''E"
+                altitud="11 m"
+                sector="1"/>
+        
+        <tramo distancia="280,39 m"
+                coordenadas="25º 29' 35''N 51º 26' 55''E"
+                altitud="11 m"
+                sector="1"/>
+
+        <tramo distancia="140,37 m"
+                coordenadas="25º 29' 33''N 51º 26' 59''E"
+                altitud="10 m"
+                sector="1"/>
+                
+        <tramo distancia="141,65 m"
+                coordenadas="25º 29' 35''N 51º 27' 02''E"
+                altitud="11 m"
+                sector="1"/>
+
+        <tramo distancia="96,49 m"
+                coordenadas="25º 29' 38''N 51º 27' 02''E"
+                altitud="11 m"
+                sector="1"/>
+
+        <tramo distancia="119,66 m"
+                coordenadas="25º 29' 41''N 51º 27' 03''E"
+                altitud="11 m"
+                sector="1"/>
+
+        <tramo distancia="290,54 m"
+                coordenadas="25º 29' 49''N 51º 27' 12''E"
+                altitud="10 m"
+                sector="1"/>
+
+        <tramo distancia="115,33 m"
+                coordenadas="25º 29' 49''N 51º 27' 11''E"
+                altitud="10 m"
+                sector="1"/>
+
+        <tramo distancia="75,45 m"
+                coordenadas="25º 29' 47''N 51º 27' 16''E"
+                altitud="10 m"
+                sector="1"/>
+
+        <tramo distancia="92,96 m"
+                coordenadas="25º 29' 44''N 51º 27' 16''E"
+                altitud="11 m"
+                sector="1"/>
+
+        <tramo distancia="111,59 m"
+                coordenadas="25º 29' 41''N 51º 27' 13''E"
+                altitud="11 m"
+                sector="1"/>
+
+        <tramo distancia="99,73 m"
+                coordenadas="25º 29' 39''N 51º 27' 11''E"
+                altitud="11 m"
+                sector="2"/>
+
+        <tramo distancia="91 m"
+                coordenadas="25º 29' 38''N 51º 27' 12''E"
+                altitud="12 m"
+                sector="2"/>
+
+        <tramo distancia="275,94 m"
+                coordenadas="25º 29' 41''N 51º 27' 22''E"
+                altitud="12 m"
+                sector="2"/>
+
+        <tramo distancia="200,07 m"
+                coordenadas="25º 29' 37''N 51º 27' 23''E"
+                altitud="12 m"
+                sector="2"/>
+
+        <tramo distancia="178,68 m"
+                coordenadas="25º 29' 32''N 51º 27' 20''E"
+                altitud="11 m"
+                sector="2"/>
+
+        <tramo distancia="98,65 m"
+                coordenadas="25º 29' 30''N 51º 27' 18''E"
+                altitud="11 m"
+                sector="2"/>
+
+        <tramo distancia="121,02 m"
+                coordenadas="25º 29' 29''N 51º 27' 13''E"
+                altitud="11 m"
+                sector="2"/>
+
+        <tramo distancia="116,87 m"
+                coordenadas="25º 29' 26''N 51º 27' 13''E"
+                altitud="11 m"
+                sector="2"/>
+
+        <tramo distancia="375,77 m"
+                coordenadas="25º 29' 24''N 51º 27' 24''E"
+                altitud="12 m"
+                sector="2"/>
+
+        <tramo distancia="121,33 m"
+                coordenadas="25º 29' 22''N 51º 27' 33''E"
+                altitud="12 m"
+                sector="3"/>
+
+        <tramo distancia="109,8 m"
+                coordenadas="25º 29' 22''N 51º 27' 33''E"
+                altitud="12 m"
+                sector="3"/>
+
+        <tramo distancia="103,16 m"
+                coordenadas="25º 29' 19''N 51º 27' 35''E"
+                altitud="12 m"
+                sector="3"/>
+
+        <tramo distancia="88,62 m"
+                coordenadas="25º 29' 20''N 51º 27' 34''E"
+                altitud="12 m"
+                sector="3"/>
+
+        <tramo distancia="126,7 m"
+                coordenadas="25º 29' 13''N 51º 27' 32''E"
+                altitud="13 m"
+                sector="3"/>
+
+        <tramo distancia="80,3 m"
+                coordenadas="25º 29' 12''N 51º 27' 30''E"
+                altitud="13 m"
+                sector="3"/>
+
+        <tramo distancia="233,33 m"
+                coordenadas="25º 29' 14''N 51º 27' 22''E"
+                altitud="13 m"
+                sector="3"/>
+
+        <tramo distancia="104,77 m"
+                coordenadas="25º 29' 12''N 51º 27' 19''E"
+                altitud="13 m"
+                sector="3"/>
+
+        <tramo distancia="342,34 m"
+                coordenadas="25º 29' 02''N 51º 27' 13''E"
+                altitud="13 m"
+                sector="3"/>
+
+        <tramo distancia="135,4 m"
+                coordenadas="25º 29' 02''N 51º 27' 09''E"
+                altitud="14 m"
+                sector="3"/>
+
+        <tramo distancia="643,62 m"
+                coordenadas="25º 29' 21''N 51º 26' 58''E"
+                altitud="12 m"
+                sector="3"/>
+        
+    </coordenadas>
+
 </circuito>
