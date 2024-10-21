@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE circuito SYSTEM "circuito.dtd">
 
 
-<circuito>
+<circuito
+xmlns="http://www.uniovi.es" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.uniovi.es circuito.xsd"> 
     <caracteristicas>
         <caracteristica nombre="Circuito Internacional de Losail"
-         longitud="5380 metros"
-         anchura="12 metros"
+         longitud="5380"
+         anchura="12"
          localidad="Losail"
          pais="Qatar"
         />
@@ -14,8 +16,8 @@
 
     <carrera>
         <infoCarrera>
-           <dato fecha="29 de Noviembre 2024"
-                hora="19.00h"
+           <dato fecha="2024-11-29"
+                hora="19:00:00"
                 vueltas="57"/>
         </infoCarrera>
     </carrera>
@@ -33,192 +35,192 @@
     <coordenadas>
         <salida latitud="25º 29' 12'' N"
                 longitud="51º 27' 03'' E"
-                altitud="12,31 m"/>
+                altitud="12"/>
         
-        <tramo distancia="430,03 m"
+        <tramo distancia="430.03"
                 latitud="25º 29' 33''N"
                 longitud="51º 26' 51''E"
-                altitud="11 m"
+                altitud="11"
                 sector="1"/>
         
-        <tramo distancia="280,39 m"
+        <tramo distancia="280.39"
                 latitud="25º 29' 35''N"
                 longitud="51º 26' 55''E"
-                altitud="11 m"
+                altitud="11"
                 sector="1"/>
 
-        <tramo distancia="140,37 m"
+        <tramo distancia="140.37"
                 latitud="25º 29' 33''N"
                 longitud="51º 26' 59''E"
-                altitud="10 m"
+                altitud="10"
                 sector="1"/>
                 
-        <tramo distancia="141,65 m"
+        <tramo distancia="141.65"
                 latitud="25º 29' 35''N"
                 longitud="51º 27' 02''E"
-                altitud="11 m"
+                altitud="11"
                 sector="1"/>
 
-        <tramo distancia="96,49 m"
+        <tramo distancia="96.49"
                 latitud="25º 29' 38''N"
                 longitud="51º 27' 02''E"
-                altitud="11 m"
+                altitud="11"
                 sector="1"/>
 
-        <tramo distancia="119,66 m"
+        <tramo distancia="119.66"
                 latitud="25º 29' 41''N"
                 longitud="51º 27' 03''E"
-                altitud="11 m"
+                altitud="11"
                 sector="1"/>
 
-        <tramo distancia="290,54 m"
+        <tramo distancia="290.54"
                 latitud="25º 29' 49''N"
                 longitud="51º 27' 12''E"
-                altitud="10 m"
+                altitud="10"
                 sector="1"/>
 
-        <tramo distancia="115,33 m"
+        <tramo distancia="115.33"
                 latitud="25º 29' 49''N"
                 longitud="51º 27' 11''E"
-                altitud="10 m"
+                altitud="10"
                 sector="1"/>
 
-        <tramo distancia="75,45 m"
+        <tramo distancia="75.45"
                 latitud="25º 29' 47''N"
                 longitud="51º 27' 16''E"
-                altitud="10 m"
+                altitud="10"
                 sector="1"/>
 
-        <tramo distancia="92,96 m"
+        <tramo distancia="92.96"
                 latitud="25º 29' 44''N"
                 longitud="51º 27' 16''E"
-                altitud="11 m"
+                altitud="11"
                 sector="1"/>
 
-        <tramo distancia="111,59 m"
+        <tramo distancia="111.59"
                 latitud="25º 29' 41''N"
                 longitud="51º 27' 13''E"
-                altitud="11 m"
+                altitud="11"
                 sector="1"/>
 
-        <tramo distancia="99,73 m"
+        <tramo distancia="99.73"
                 latitud="25º 29' 39''N"
                 longitud="51º 27' 11''E"
-                altitud="11 m"
+                altitud="11"
                 sector="2"/>
 
-        <tramo distancia="91 m"
+        <tramo distancia="91"
                 latitud="25º 29' 38''N"
                 longitud="51º 27' 12''E"
-                altitud="12 m"
+                altitud="12"
                 sector="2"/>
 
-        <tramo distancia="275,94 m"
+        <tramo distancia="275.94"
                 latitud="25º 29' 41''N"
                 longitud="51º 27' 22''E"
-                altitud="12 m"
+                altitud="12"
                 sector="2"/>
 
-        <tramo distancia="200,07 m"
+        <tramo distancia="200.07"
                 latitud="25º 29' 37''N"
                 longitud="51º 27' 23''E"
-                altitud="12 m"
+                altitud="12"
                 sector="2"/>
 
-        <tramo distancia="178,68 m"
+        <tramo distancia="178.68"
                 latitud="25º 29' 32''N"
                 longitud="51º 27' 20''E"
-                altitud="11 m"
+                altitud="11"
                 sector="2"/>
 
-        <tramo distancia="98,65 m"
+        <tramo distancia="98.65"
                 latitud="25º 29' 30''N"
                 longitud="51º 27' 18''E"
-                altitud="11 m"
+                altitud="11"
                 sector="2"/>
 
-        <tramo distancia="121,02 m"
+        <tramo distancia="121.02"
                 latitud="25º 29' 29''N"
                 longitud="51º 27' 13''E"
-                altitud="11 m"
+                altitud="11"
                 sector="2"/>
 
-        <tramo distancia="116,87 m"
+        <tramo distancia="116.87"
                 latitud="25º 29' 26''N"
                 longitud="51º 27' 13''E"
-                altitud="11 m"
+                altitud="11"
                 sector="2"/>
 
-        <tramo distancia="375,77 m"
+        <tramo distancia="375.77"
                 latitud="25º 29' 24''N"
                 longitud="51º 27' 24''E"
-                altitud="12 m"
+                altitud="12"
                 sector="2"/>
 
-        <tramo distancia="121,33 m"
+        <tramo distancia="121.33"
                 latitud="25º 29' 22''N"
                 longitud="51º 27' 33''E"
-                altitud="12 m"
+                altitud="12"
                 sector="3"/>
 
-        <tramo distancia="109,8 m"
+        <tramo distancia="109.8"
                 latitud="25º 29' 22''N"
                 longitud="51º 27' 33''E"
-                altitud="12 m"
+                altitud="12"
                 sector="3"/>
 
-        <tramo distancia="103,16 m"
+        <tramo distancia="103.16"
                 latitud="25º 29' 19''N"
                 longitud="51º 27' 35''E"
-                altitud="12 m"
+                altitud="12"
                 sector="3"/>
 
-        <tramo distancia="88,62 m"
+        <tramo distancia="88.62"
                 latitud="25º 29' 20''N"
                 longitud="51º 27' 34''E"
-                altitud="12 m"
+                altitud="12"
                 sector="3"/>
 
-        <tramo distancia="126,7 m"
+        <tramo distancia="126.7"
                 latitud="25º 29' 13''N"
                 longitud="51º 27' 32''E"
-                altitud="13 m"
+                altitud="13"
                 sector="3"/>
 
-        <tramo distancia="80,3 m"
+        <tramo distancia="80.3"
                 latitud="25º 29' 12''N"
                 longitud="51º 27' 30''E"
-                altitud="13 m"
+                altitud="13"
                 sector="3"/>
 
-        <tramo distancia="233,33 m"
+        <tramo distancia="233.33"
                 latitud="25º 29' 14''N"
                 longitud="51º 27' 22''E"
-                altitud="13 m"
+                altitud="13"
                 sector="3"/>
 
-        <tramo distancia="104,77 m"
+        <tramo distancia="104.77"
                 latitud="25º 29' 12''N"
                 longitud="51º 27' 19''E"
-                altitud="13 m"
+                altitud="13"
                 sector="3"/>
 
-        <tramo distancia="342,34 m"
+        <tramo distancia="342.34"
                 latitud="25º 29' 02''N"
                 longitud="51º 27' 13''E"
-                altitud="13 m"
+                altitud="13"
                 sector="3"/>
 
-        <tramo distancia="135,4 m"
+        <tramo distancia="135.4"
                 latitud="25º 29' 02''N"
                 longitud="51º 27' 09''E"
-                altitud="14 m"
+                altitud="14"
                 sector="3"/>
 
-        <tramo distancia="643,62 m"
+        <tramo distancia="643.62"
                 latitud="25º 29' 21''N"
                 longitud="51º 26' 58''E"
-                altitud="12 m"
+                altitud="12"
                 sector="3"/>
         
     </coordenadas>

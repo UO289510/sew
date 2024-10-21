@@ -14,14 +14,15 @@
 <!ATTLIST caracteristica anchura CDATA #REQUIRED>
 <!ATTLIST caracteristica localidad CDATA #REQUIRED>
 <!ATTLIST caracteristica pais CDATA #REQUIRED>
-<!ATTLIST dato info CDATA #REQUIRED>
+<!ATTLIST dato fecha CDATA #REQUIRED>
+<!ATTLIST dato hora CDATA #REQUIRED>
+<!ATTLIST dato vueltas CDATA #REQUIRED>
 <!ATTLIST referencia enlace CDATA #REQUIRED>
 
 <!ELEMENT galeria (foto*)>
 <!ELEMENT foto EMPTY>
-<!ATTLIST foto imagen ENTITY #REQUIRED>
+<!ATTLIST foto imagen CDATA #REQUIRED>
 
-<!ENTITY mapa SYSTEM "mapa.png" NDATA png>
 <!NOTATION png SYSTEM "imagen/png">
 
 <!ELEMENT coordenadas (salida, tramo*)>
@@ -33,6 +34,7 @@
 <!ATTLIST salida altitud CDATA #REQUIRED>
 
 <!ATTLIST tramo distancia CDATA #REQUIRED>
-<!ATTLIST tramo coordenadas CDATA #REQUIRED>
+<!ATTLIST tramo latitud CDATA #REQUIRED>
+<!ATTLIST tramo longitud CDATA #REQUIRED>
 <!ATTLIST tramo altitud CDATA #REQUIRED>
 <!ATTLIST tramo sector CDATA #REQUIRED>
