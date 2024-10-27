@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <circuito
 xmlns="http://www.uniovi.es" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.uniovi.es circuito.xsd"> 
-    <caracteristicas>
+xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
+
+     <caracteristicas>
         <caracteristica nombre="Circuito Internacional de Losail"
          longitud="5380"
          anchura="12"
@@ -33,195 +33,857 @@ xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
     </galeria>
 
     <coordenadas>
-        <salida latitud="25º 29' 12'' N"
-                longitud="51º 27' 03'' E"
+        <salida latitud="25º 29' 21.19'' N"
+                longitud="51º 26' 58.56'' E"
                 altitud="12"/>
         
-        <tramo distancia="430.03"
-                latitud="25º 29' 33''N"
-                longitud="51º 26' 51''E"
+        <!-- Tramo 0 -->
+        <tramo distancia="430.07"
+                latitud="25º 29' 33.43'' N"
+                longitud="51º 26' 51.13'' E"
                 altitud="11"
                 sector="1"/>
+
+        <!-- Curva 1-1 -->
+        <tramo distancia="34.62"
+        latitud="25° 29' 34.55'' N"
+        longitud="51° 26' 51.03'' E"
+        altitud="10"
+        sector="1"/>       
         
-        <tramo distancia="280.39"
-                latitud="25º 29' 35''N"
-                longitud="51º 26' 55''E"
-                altitud="11"
-                sector="1"/>
-
-        <tramo distancia="140.37"
-                latitud="25º 29' 33''N"
-                longitud="51º 26' 59''E"
-                altitud="10"
-                sector="1"/>
+        <!-- Curva 1-2 -->
+        <tramo distancia="31.43"
+        latitud="25° 29' 35.45'' N"
+        longitud="51° 26' 51.65'' E"
+        altitud="10"
+        sector="1"/>       
                 
-        <tramo distancia="141.65"
-                latitud="25º 29' 35''N"
-                longitud="51º 27' 02''E"
+        <!-- Curva 1-3 -->
+        <tramo distancia="25.35"
+        latitud="25° 29' 35.93'' N"
+        longitud="51° 26' 52.25'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 1-4 -->
+        <tramo distancia="29.03"
+        latitud="25° 29' 36.17'' N"
+        longitud="51° 26' 53.26'' E"
+        altitud="10"
+        sector="1"/>       
+        
+        <!-- Curva 1-5 -->
+        <tramo distancia="26.37"
+        latitud="25° 29' 36.02'' N"
+        longitud="51° 26' 54.14'' E"
+        altitud="11"
+        sector="1"/>       
+
+        <!-- Tramo 1 -->
+        <tramo distancia="29.71"
+                latitud="25º 29' 35.51'' N"
+                longitud="51º 26' 55.04'' E"
+                altitud="10"
+                sector="1"/>
+
+        <!-- Tramo 2 -->
+        <tramo distancia="140.37"
+                latitud="25º 29' 33.11'' N"
+                longitud="51º 26' 59.34'' E"
                 altitud="11"
                 sector="1"/>
 
-        <tramo distancia="96.49"
-                latitud="25º 29' 38''N"
-                longitud="51º 27' 02''E"
+        <!-- Curva 2-1 -->
+        <tramo distancia="9.62"
+        latitud="25° 29' 32.97'' N"
+        longitud="51° 26' 59.70'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 2-2 -->
+        <tramo distancia="18.61"
+        latitud="25° 29' 32.81'' N"
+        longitud="51° 27' 00.33'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 2-3 -->
+        <tramo distancia="15.95"
+        latitud="25° 29' 32.91'' N"
+        longitud="51° 27' 00.81'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 2-4 -->
+        <tramo distancia="14.84"
+        latitud="25° 29' 33.04'' N"
+        longitud="51° 27' 01.33'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 2-5 -->
+        <tramo distancia="12.88"
+        latitud="25° 29' 33.21'' N"
+        longitud="51° 27' 01.72'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 2-6 -->
+        <tramo distancia="14.82"
+        latitud="25° 29' 33.58'' N"
+        longitud="51° 27' 02.16'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 2-7 -->
+        <tramo distancia="14.96"
+        latitud="25° 29' 34.01'' N"
+        longitud="51° 27' 02.47'' E"
+        altitud="10"
+        sector="1"/>       
+
+        <!-- Curva 2-8 -->
+        <tramo distancia="16.28"
+        latitud="25° 29' 34.46'' N"
+        longitud="51° 27' 02.61'' E"
+        altitud="11"
+        sector="1"/>       
+
+        <!-- Tramo 3 -->
+        <tramo distancia="22.6"
+                latitud="25º 29' 35.26'' N"
+                longitud="51º 27' 02.63'' E"
                 altitud="11"
                 sector="1"/>
 
-        <tramo distancia="119.66"
-                latitud="25º 29' 41''N"
-                longitud="51º 27' 03''E"
+        <!-- Tramo 4 -->
+        <tramo distancia="86.92"
+                latitud="25º 29' 38.07'' N"
+                longitud="51º 27' 02.59'' E"
                 altitud="11"
                 sector="1"/>
 
+        <!-- Curva 3-1 -->
+        <tramo distancia="41.46"
+        latitud="25° 29' 39.76'' N"
+        longitud="51° 27' 02.60'' E"
+        altitud="11"
+        sector="1"/> 
+        
+        <!-- Curva 3-2 -->
+        <tramo distancia="27.35"
+        latitud="25° 29' 40.58'' N"
+        longitud="51° 27' 03.01'' E"
+        altitud="11"
+        sector="1"/>  
+
+        <!-- Curva 3-3 -->
+        <tramo distancia="27.88"
+        latitud="25° 29' 41.30'' N"
+        longitud="51° 27' 03.61'' E"
+        altitud="10"
+        sector="1"/>  
+
+        <!-- Tramo 5 -->
+        <tramo distancia="12.48"
+                latitud="25º 29' 41.61'' N"
+                longitud="51º 27' 03.90'' E"
+                altitud="10"
+                sector="1"/>
+
+        <!-- Tramo 6 -->
         <tramo distancia="290.54"
-                latitud="25º 29' 49''N"
-                longitud="51º 27' 12''E"
+                latitud="25º 29' 48.61'' N"
+                longitud="51º 27' 10.91'' E"
                 altitud="10"
                 sector="1"/>
 
-        <tramo distancia="115.33"
-                latitud="25º 29' 49''N"
-                longitud="51º 27' 11''E"
+        <!-- Curva 4-1 -->
+        <tramo distancia="22.61"
+        latitud="25° 29' 49.13'' N"
+        longitud="51° 27' 11.49'' E"
+        altitud="10"
+        sector="1"/>  
+
+        <!-- Curva 4-2 -->
+        <tramo distancia="26.78"
+        latitud="25° 29' 49.56'' N"
+        longitud="51° 27' 12.32'' E"
+        altitud="10"
+        sector="1"/>  
+
+        <!-- Curva 4-3 -->
+        <tramo distancia="21.91"
+        latitud="25° 29' 49.63'' N"
+        longitud="51° 27' 13.11'' E"
+        altitud="10"
+        sector="1"/>  
+
+        <!-- Curva 4-4 -->
+        <tramo distancia="22.82"
+        latitud="25° 29' 49.39'' N"
+        longitud="51° 27' 13.85'' E"
+        altitud="10"
+        sector="1"/>  
+
+        <!-- Tramo 7 -->
+        <tramo distancia="21.25"
+                latitud="25º 29' 49.02'' N"
+                longitud="51º 27' 14.52'' E"
                 altitud="10"
                 sector="1"/>
 
-        <tramo distancia="75.45"
-                latitud="25º 29' 47''N"
-                longitud="51º 27' 16''E"
+        <!-- Tramo 8 -->
+        <tramo distancia="71.58"
+                latitud="25º 29' 47.44'' N"
+                longitud="51º 27' 16.48'' E"
                 altitud="10"
                 sector="1"/>
 
-        <tramo distancia="92.96"
-                latitud="25º 29' 44''N"
-                longitud="51º 27' 16''E"
+        <!-- Curva 5-1 -->
+        <tramo distancia="16.27"
+        latitud="25° 29' 47.00'' N"
+        longitud="51° 27' 16.84'' E"
+        altitud="10"
+        sector="1"/>  
+
+        <!-- Curva 5-2 -->
+        <tramo distancia="20.64"
+        latitud="25° 29' 46.39'' N"
+        longitud="51° 27' 17.06'' E"
+        altitud="10"
+        sector="1"/>  
+
+        <!-- Curva 5-3 -->
+        <tramo distancia="21.58"
+        latitud="25° 29' 45.69'' N"
+        longitud="51° 27' 17.03'' E"
+        altitud="11"
+        sector="1"/>
+
+        <!-- Curva 5-4 -->
+        <tramo distancia="18"
+        latitud="25° 29' 45.02'' N"
+        longitud="51° 27' 16.82'' E"
+        altitud="11"
+        sector="1"/>
+
+        <!-- Tramo 9 -->
+        <tramo distancia="15.5"
+                latitud="25º 29' 44.73'' N"
+                longitud="51º 27' 16.46'' E"
                 altitud="11"
                 sector="1"/>
 
+        <!-- Tramo 10 -->
         <tramo distancia="111.59"
-                latitud="25º 29' 41''N"
-                longitud="51º 27' 13''E"
-                altitud="11"
+                latitud="25º 29' 42.02'' N"
+                longitud="51º 27' 13.79'' E"
+                altitud="12"
                 sector="1"/>
 
-        <tramo distancia="99.73"
-                latitud="25º 29' 39''N"
-                longitud="51º 27' 11''E"
+        <!-- Tramo 11 -->
+        <tramo distancia="99.32"
+                latitud="25º 29' 39.58'' N"
+                longitud="51º 27' 11.45'' E"
                 altitud="11"
                 sector="2"/>
 
-        <tramo distancia="91"
-                latitud="25º 29' 38''N"
-                longitud="51º 27' 12''E"
+        <!-- Curva 6-1 -->
+        <tramo distancia="10.06"
+        latitud="25° 29' 39.33'' N"
+        longitud="51° 27' 11.20'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 6-2 -->
+        <tramo distancia="11.84"
+        latitud="25° 29' 38.95'' N"
+        longitud="51° 27' 11.13'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 6-3 -->
+        <tramo distancia="11.91"
+        latitud="25° 29' 38.58'' N"
+        longitud="51° 27' 11.24'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 6-4 -->
+        <tramo distancia="13.05"
+        latitud="25° 29' 38.22'' N"
+        longitud="51° 27' 11.48'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 6-5 -->
+        <tramo distancia="13.07"
+        latitud="25° 29' 38.00'' N"
+        longitud="51° 27' 11.88'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 6-6 -->
+        <tramo distancia="12.84"
+        latitud="25° 29' 37.92'' N"
+        longitud="51° 27' 12.33'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Tramo 12 -->
+        <tramo distancia="17.72"
+                latitud="25º 29' 38.10'' N"
+                longitud="51º 27' 12.85'' E"
                 altitud="12"
                 sector="2"/>
 
+        <!-- Tramo 13 -->
         <tramo distancia="275.94"
-                latitud="25º 29' 41''N"
-                longitud="51º 27' 22''E"
+                latitud="25º 29' 41.49'' N"
+                longitud="51º 27' 22.10'' E"
                 altitud="12"
                 sector="2"/>
 
-        <tramo distancia="200.07"
-                latitud="25º 29' 37''N"
-                longitud="51º 27' 23''E"
+        <!-- Curva 7-1 -->
+        <tramo distancia="14.73"
+        latitud="25° 29' 41.60'' N"
+        longitud="51° 27' 22.61'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 7-2 -->
+        <tramo distancia="18.15"
+        latitud="25° 29' 41.52'' N"
+        longitud="51° 27' 23.26'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 7-3 -->
+        <tramo distancia="23.51"
+        latitud="25° 29' 41.25'' N"
+        longitud="51° 27' 24.08'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 7-4 -->
+        <tramo distancia="24.72"
+        latitud="25° 29' 40.83'' N"
+        longitud="51° 27' 24.58'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 7-5 -->
+        <tramo distancia="27.56"
+        latitud="25° 29' 39.84'' N"
+        longitud="51° 27' 25.08'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 7-6 -->
+        <tramo distancia="23.45"
+        latitud="25° 29' 39.13'' N"
+        longitud="51° 27' 24.98'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 7-7 -->
+        <tramo distancia="19.66"
+        latitud="25° 29' 38.51'' N"
+        longitud="51° 27' 24.76'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 7-8 -->
+        <tramo distancia="19.24"
+        latitud="25° 29' 38.01'' N"
+        longitud="51° 27' 24.38'' E"
+        altitud="12"
+        sector="2"/>
+        
+        <!-- Tramo 14 -->
+        <tramo distancia="28.86"
+                latitud="25º 29' 37.50'' N"
+                longitud="51º 27' 23.50'' E"
                 altitud="12"
                 sector="2"/>
 
-        <tramo distancia="178.68"
-                latitud="25º 29' 32''N"
-                longitud="51º 27' 20''E"
+        <!-- Curva 8-1 -->
+        <tramo distancia="25.87"
+        latitud="25° 29' 36.91'' N"
+        longitud="51° 27' 22.83'' E"
+        altitud="11"
+        sector="2"/>
+
+       <!-- Curva 8-2 -->
+       <tramo distancia="58.06"
+       latitud="25° 29' 35.31'' N"
+       longitud="51° 27' 21.72'' E"
+       altitud="11"
+       sector="2"/> 
+
+        <!-- Curva 8-3 -->
+        <tramo distancia="34.77"
+        latitud="25° 29' 34.33'' N"
+        longitud="51° 27' 21.14'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 8-4 -->
+        <tramo distancia="34.72"
+        latitud="25° 29' 33.30'' N"
+        longitud="51° 27' 20.76'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Tramo 15 -->
+        <tramo distancia="25.87"
+                latitud="25º 29' 32.47'' N"
+                longitud="51º 27' 20.55'' E"
                 altitud="11"
                 sector="2"/>
 
-        <tramo distancia="98.65"
-                latitud="25º 29' 30''N"
-                longitud="51º 27' 18''E"
+        <!-- Curva 9-1 -->
+        <tramo distancia="19.36"
+        latitud="25° 29' 31.86'' N"
+        longitud="51° 27' 20.43'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 9-2 -->
+        <tramo distancia="16.84"
+        latitud="25° 29' 31.37'' N"
+        longitud="51° 27' 20.16'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 9-3 -->
+        <tramo distancia="18.07"
+        latitud="25° 29' 30.95'' N"
+        longitud="51° 27' 19.71'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 9-4 -->
+        <tramo distancia="22.70"
+        latitud="25° 29' 30.62'' N"
+        longitud="51° 27' 18.98'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Tramo 16 -->
+        <tramo distancia="22.76"
+                latitud="25º 29' 30.46'' N"
+                longitud="51º 27' 18.25'' E"
                 altitud="11"
                 sector="2"/>
 
+        <!-- Tramo 17 -->
         <tramo distancia="121.02"
-                latitud="25º 29' 29''N"
-                longitud="51º 27' 13''E"
+                latitud="25º 29' 29.47'' N"
+                longitud="51º 27' 14.05'' E"
                 altitud="11"
                 sector="2"/>
 
-        <tramo distancia="116.87"
-                latitud="25º 29' 26''N"
-                longitud="51º 27' 13''E"
+        <!-- Curva 10-1 -->
+        <tramo distancia="16.56"
+        latitud="25° 29' 29.33'' N"
+        longitud="51° 27' 13.44'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 10-2 -->
+        <tramo distancia="24.07"
+        latitud="25° 29' 28.75'' N"
+        longitud="51° 27' 12.85'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 10-3 -->
+        <tramo distancia="20.66"
+        latitud="25° 29' 28.11'' N"
+        longitud="51° 27' 12.65'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 10-4 -->
+        <tramo distancia="20.95"
+        latitud="25° 29' 27.45'' N"
+        longitud="51° 27' 12.86'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 10-5 -->
+        <tramo distancia="20.09"
+        latitud="25° 29' 26.91'' N"
+        longitud="51° 27' 13.23'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Tramo 18 -->
+        <tramo distancia="14.79"
+                latitud="25º 29' 26.56'' N"
+                longitud="51º 27' 13.60'' E"
                 altitud="11"
                 sector="2"/>
 
-        <tramo distancia="375.77"
-                latitud="25º 29' 24''N"
-                longitud="51º 27' 24''E"
+        <!-- Curva 11-1 -->
+        <tramo distancia="48.09"
+        latitud="25° 29' 25.49'' N"
+        longitud="51° 27' 14.85'' E"
+        altitud="11"
+        sector="2"/>
+
+        <!-- Curva 11-2 -->
+        <tramo distancia="39.75"
+        latitud="25° 29' 24.75'' N"
+        longitud="51° 27' 16.02'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 11-3 -->
+        <tramo distancia="33.69"
+        latitud="25° 29' 24.22'' N"
+        longitud="51° 27' 17.07'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 11-4 -->
+        <tramo distancia="32.23"
+        latitud="25° 29' 23.80'' N"
+        longitud="51° 27' 18.13'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 11-5 -->
+        <tramo distancia="31.10"
+        latitud="25° 29' 23.54'' N"
+        longitud="51° 27' 19.25'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 11-6 -->
+        <tramo distancia="26.78"
+        latitud="25° 29' 23.27'' N"
+        longitud="51° 27' 20.31'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 11-7 -->
+        <tramo distancia="33.8"
+        latitud="25° 29' 23.16'' N"
+        longitud="51° 27' 21.29'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Curva 11-8 -->
+        <tramo distancia="29.95"
+        latitud="25° 29' 23.16'' N"
+        longitud="51° 27' 22.40'' E"
+        altitud="12"
+        sector="2"/>
+
+        <!-- Tramo 19 -->
+        <tramo distancia="99.27"
+                latitud="25º 29' 23.48'' N"
+                longitud="51º 27' 25.93'' E"
                 altitud="12"
                 sector="2"/>
 
+        <!-- Tramo 20 -->
         <tramo distancia="121.33"
-                latitud="25º 29' 22''N"
-                longitud="51º 27' 33''E"
+                latitud="25º 29' 23.97'' N"
+                longitud="51º 27' 30.30'' E"
                 altitud="12"
                 sector="3"/>
 
-        <tramo distancia="109.8"
-                latitud="25º 29' 22''N"
-                longitud="51º 27' 33''E"
+        <!-- Curva 12-1 -->
+        <tramo distancia="19.02"
+        latitud="25° 29' 24.02'' N"
+        longitud="51° 27' 31.16'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 12-2 -->
+        <tramo distancia="17.08"
+        latitud="25° 29' 23.98'' N"
+        longitud="51° 27' 31.61'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 12-3 -->
+        <tramo distancia="14.85"
+        latitud="25° 29' 23.78'' N"
+        longitud="51° 27' 32.31'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 12-4 -->
+        <tramo distancia="15.75"
+        latitud="25° 29' 23.64'' N"
+        longitud="51° 27' 32.63'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 12-5 -->
+        <tramo distancia="13.95"
+        latitud="25° 29' 23.45'' N"
+        longitud="51° 27' 33.05'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 12-6 -->
+        <tramo distancia="14.46"
+        latitud="25° 29' 23.13'' N"
+        longitud="51° 27' 33.43'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Tramo 21 -->
+        <tramo distancia="14.74"
+                latitud="25º 29' 22.75'' N"
+                longitud="51º 27' 33.76'' E"
                 altitud="12"
                 sector="3"/>
 
-        <tramo distancia="103.16"
-                latitud="25º 29' 19''N"
-                longitud="51º 27' 35''E"
+        <!-- Tramo 22 -->
+        <tramo distancia="102.44"
+                latitud="25º 29' 19.84'' N"
+                longitud="51º 27' 35.56'' E"
                 altitud="12"
                 sector="3"/>
 
-        <tramo distancia="88.62"
-                latitud="25º 29' 20''N"
-                longitud="51º 27' 34''E"
+        <!-- Curva 13-1 -->
+        <tramo distancia="15.36"
+        latitud="25° 29' 19.23'' N"
+        longitud="51° 27' 35.87'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 13-2 -->
+        <tramo distancia="13.43"
+        latitud="25° 29' 18.97'' N"
+        longitud="51° 27' 35.93'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 13-3 -->
+        <tramo distancia="14.74"
+        latitud="25° 29' 18.40'' N"
+        longitud="51° 27' 35.96'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 13-4 -->
+        <tramo distancia="14.77"
+        latitud="25° 29' 17.95'' N"
+        longitud="51° 27' 35.86'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 13-5 -->
+        <tramo distancia="14.65"
+        latitud="25° 29' 17.42'' N"
+        longitud="51° 27' 35.58'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Tramo 23 -->
+        <tramo distancia="15.22"
+                latitud="25º 29' 17.14'' N"
+                longitud="51º 27' 35.36'' E"
                 altitud="12"
                 sector="3"/>
 
+        <!-- Tramo 24 -->
         <tramo distancia="126.7"
-                latitud="25º 29' 13''N"
-                longitud="51º 27' 32''E"
+                latitud="25º 29' 13.64'' N"
+                longitud="51º 27' 32.89'' E"
                 altitud="13"
                 sector="3"/>
 
-        <tramo distancia="80.3"
-                latitud="25º 29' 12''N"
-                longitud="51º 27' 30''E"
+        <!-- Curva 14-1 -->
+        <tramo distancia="14.47"
+        latitud="25° 29' 13.21'' N"
+        longitud="51° 27' 32.44'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 14-2 -->
+        <tramo distancia="13.91"
+        latitud="25° 29' 13.06'' N"
+        longitud="51° 27' 32.15'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 14-3 -->
+        <tramo distancia="13.74"
+        latitud="25° 29' 12.87'' N"
+        longitud="51° 27' 31.71'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 14-4 -->
+        <tramo distancia="14.48"
+        latitud="25° 29' 12.78'' N"
+        longitud="51° 27' 31.20'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 14-5 -->
+        <tramo distancia="12.84"
+        latitud="25° 29' 12.79'' N"
+        longitud="51° 27' 30.75'' E"
+        altitud="13"
+        sector="3"/>
+        
+        <!-- Tramo 25 -->
+        <tramo distancia="11.8"
+                latitud="25º 29' 12.87'' N"
+                longitud="51º 27' 30.36'' E"
                 altitud="13"
                 sector="3"/>
 
+        <!-- Tramo 26 -->
         <tramo distancia="233.33"
-                latitud="25º 29' 14''N"
-                longitud="51º 27' 22''E"
+                latitud="25º 29' 14.33'' N"
+                longitud="51º 27' 22.16'' E"
                 altitud="13"
                 sector="3"/>
 
-        <tramo distancia="104.77"
-                latitud="25º 29' 12''N"
-                longitud="51º 27' 19''E"
-                altitud="13"
+        <!-- Curva 15-1 -->
+        <tramo distancia="18.43"
+        latitud="25° 29' 14.43'' N"
+        longitud="51° 27' 21.49'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 15-2 -->
+        <tramo distancia="18.3"
+        latitud="25° 29' 14.30'' N"
+        longitud="51° 27' 20.86'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 15-3 -->
+        <tramo distancia="18.1"
+        latitud="25° 29' 14.04'' N"
+        longitud="51° 27' 20.28'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 15-4 -->
+        <tramo distancia="19.12"
+        latitud="25° 29' 13.60'' N"
+        longitud="51° 27' 19.81'' E"
+        altitud="12"
+        sector="3"/>
+
+        <!-- Curva 15-5 -->
+        <tramo distancia="18.66"
+        latitud="25° 29' 13.08'' N"
+        longitud="51° 27' 19.45'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Tramo 27 -->
+        <tramo distancia="12.72"
+                latitud="25º 29' 12.70'' N"
+                longitud="51º 27' 19.28'' E"
+                altitud="12"
                 sector="3"/>
 
+        <!-- Tramo 28 -->
         <tramo distancia="342.34"
-                latitud="25º 29' 02''N"
-                longitud="51º 27' 13''E"
+                latitud="25º 29' 02.81'' N"
+                longitud="51º 27' 13.68'' E"
                 altitud="13"
                 sector="3"/>
 
-        <tramo distancia="135.4"
-                latitud="25º 29' 02''N"
-                longitud="51º 27' 09''E"
+        <!-- Curva 16-1 -->
+        <tramo distancia="11.97"
+        latitud="25° 29' 02.48'' N"
+        longitud="51° 27' 13.43'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 16-2 -->
+        <tramo distancia="10.66"
+        latitud="25° 29' 02.25'' N"
+        longitud="51° 27' 13.16'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 16-3 -->
+        <tramo distancia="10.82"
+        latitud="25° 29' 02.04'' N"
+        longitud="51° 27' 12.84'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 16-4 -->
+        <tramo distancia="10.6"
+        latitud="25° 29' 01.91'' N"
+        longitud="51° 27' 12.50'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 16-5 -->
+        <tramo distancia="12.72"
+        latitud="25° 29' 01.80'' N"
+        longitud="51° 27' 12.06'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 16-6 -->
+        <tramo distancia="12.53"
+        latitud="25° 29' 01.78'' N"
+        longitud="51° 27' 11.61'' E"
+        altitud="13"
+        sector="3"/>
+
+        <!-- Curva 16-7 -->
+        <tramo distancia="10.13"
+        latitud="25° 29' 01.82'' N"
+        longitud="51° 27' 11.26'' E"
+        altitud="14"
+        sector="3"/>
+
+        <!-- Curva 16-8 -->
+        <tramo distancia="11.11"
+        latitud="25° 29' 01.90'' N"
+        longitud="51° 27' 10.86'' E"
+        altitud="14"
+        sector="3"/>
+
+        <!-- Curva 16-9 -->
+        <tramo distancia="14.26"
+        latitud="25° 29' 02.10'' N"
+        longitud="51° 27' 10.41'' E"
+        altitud="14"
+        sector="3"/>
+
+        <!-- Curva 16-10 -->
+        <tramo distancia="13.4"
+        latitud="25° 29' 02.39'' N"
+        longitud="51° 27' 10.05'' E"
+        altitud="14"
+        sector="3"/>
+
+        <!-- Tramo 29 -->
+        <tramo distancia="17.58"
+                latitud="25º 29' 02.89'' N"
+                longitud="51º 27' 9.74'' E"
                 altitud="14"
                 sector="3"/>
 
-        <tramo distancia="643.62"
-                latitud="25º 29' 21''N"
-                longitud="51º 26' 58''E"
+        <!-- Tramo 30 -->
+        <tramo distancia="643.61"
+                latitud="25º 29' 21.19'' N"
+                longitud="51º 26' 58.56'' E"
                 altitud="12"
                 sector="3"/>
+
         
     </coordenadas>
 
