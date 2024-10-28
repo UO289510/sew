@@ -16,7 +16,7 @@ de las palabras clave del mismo separadas por comas" />
 
 <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
 <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-
+<script src="js/pais.js"></script>
 
 </head>
 
@@ -39,7 +39,17 @@ de las palabras clave del mismo separadas por comas" />
     
     <main>
         <h2> Metereología</h2>
-        <p>En desarrollo</p>
+
+        <section>
+            <script>
+                var pais = new Pais("Qatar", "Doha", "2 719 391 hab")
+                pais.rellenar()
+                document.write("<h3>"+pais.getNombre()+"</h3>")
+                document.write("<h2>"+pais.getCapital()+"</h2>")
+                document.write(pais.getOtraInfo())
+            </script>
+        </section>
+
 
     </main>
     
