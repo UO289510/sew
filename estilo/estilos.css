@@ -201,7 +201,7 @@ nav a:hover{
 }
 
 
-@media (465px <= width <= 799px){
+@media (465em <= width <= 799em){
     header ~ p{
         display:none;
     }
