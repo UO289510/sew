@@ -170,9 +170,9 @@ table {
 th {
     text-align: center;
     width: auto;
-    border: 1px solid #253452;
-    padding-right: 10px;
-    padding-left: 10px;
+    border: 1em solid #253452;
+    padding-right: 10em;
+    padding-left: 10em;
     background-color:#E5E1E4;
 
     /*color se hereda de body*/
@@ -180,7 +180,7 @@ th {
 /*Especifidad 001*/
 td{
     text-align: center;
-    border: 1px solid #253452;
+    border: 1em solid #253452;
 }
 
 .active{
@@ -188,10 +188,10 @@ td{
     background-color: white;
     font-size:x-large;
     text-decoration: none;
-    border-top: 4px solid #E5E1E4;
-    border-right: 2px solid #E5E1E4;
-    border-left: 2px solid #E5E1E4;
-    border-bottom:0.1px solid transparent;
+    border-top: 4em solid #E5E1E4;
+    border-right: 2em solid #E5E1E4;
+    border-left: 2em solid #E5E1E4;
+    border-bottom:0.1em solid transparent;
 }
 
 nav a:hover{
