@@ -42,7 +42,7 @@ class Memoria{
     }
 
     shuffleElements(){
-       var deckIndex = new Array[0,1,2,3,4,5,6,7,8,9,10,11];
+       var deckIndex = [0,1,2,3,4,5,6,7,8,9,10,11];
        var shuffledIndex = new Array();
         for(i=0; i<deckIndex.length; i++){
             var aux = Math.random([0,11]);
