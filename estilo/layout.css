@@ -12,3 +12,19 @@ nav {
 nav:nth-of-type(3){
     flex: 2;
 }
+
+section:nth-of-type(2){
+    display:grid;
+    grid-template-columns: repeat(4, 125px);
+    grid-template-rows: repeat(3, 230px);
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+    padding: 5px;
+}
+
+section article{
+    flex:0 0 23%;
+    margin:5px;
+    height: 14em;
+}

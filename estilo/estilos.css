@@ -23,6 +23,7 @@ header{
 nav {
     color:rgb(212, 211, 211);
     font-size:large;
+    background-color:#253452;
     /*background-color se hereda de header*/
 }
 
@@ -205,4 +206,41 @@ nav a:hover{
     header ~ p{
         display:none;
     }
+}
+
+article {
+    width: 120px;
+    height: 250px;
+    margin: 5px;
+    transform: scale(1);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+article[data-state='flipped'] {
+    transform: rotateY(180deg);
+}
+
+article h3,
+article img {
+    margin: 0;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+}
+
+article h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+article img {
+    transform: rotateY(180deg);
 }
