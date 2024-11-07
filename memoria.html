@@ -2,23 +2,22 @@
 
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<title>F1 Desktop - Juegos</title>
+<meta charset ="UTF-8" />
 <link rel="icon" href="multimedia/imagenes/favicon2.ico">
 
-
-<meta name ="author" content ="Daniel López Fdez" />
-<meta name ="description" content ="Aquí se podrá jugar a varios juegos online" />
-<meta name ="keywords" content ="aquí cada documento debe tener la lista
-de las palabras clave del mismo separadas por comas" />
+<meta name ="author" content="Daniel López Fdez" />
+<meta name ="description" content="Aquí se podrá jugar al juego de memoria"/>
+<meta name ="keywords" content="..." />
 <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
 
+<link rel="stylesheet" type="text/css" href="estilo/estilos.css"/>
+<link rel="stylesheet" type="text/css" href="estilo/layout.css"/>
+<script src="js/memoria.js"></script>
 
-<link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
-<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 
 
 </head>
+
 
 <body>
 
@@ -36,7 +35,7 @@ de las palabras clave del mismo separadas por comas" />
         </nav>
     </header>
 
-    <p>Estás en: <a href="index.html">Inicio</a> >> Juegos </p>
+    <p>Estás en: <a href="index.html">Inicio</a> >> <a href="juegos.html">Juegos</a> >> Memoria</p>
 
     <main>
         <section>
@@ -45,10 +44,19 @@ de las palabras clave del mismo separadas por comas" />
                 <a href="memoria.html">Memoria</a>
             </nav>
         </section>
-        
-        
+
+        <section>  
+            <script>
+                var memoria = new Memoria()
+                memoria.showCards()
+
+            </script>
+        </section>
+
+
 
     </main>
 
 </body>
+
 </html>
