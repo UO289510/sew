@@ -28,7 +28,7 @@ class Memoria{
 
         this.shuffleElements();
         this.objects = this.createElements();
-        this.addEventListeners(objects);
+        this.addEventListeners(this.objects);
     }
 
     showCards(){
