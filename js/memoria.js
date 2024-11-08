@@ -42,16 +42,10 @@ class Memoria{
     }
 
     shuffleElements(){
-       var deckIndex = [0,1,2,3,4,5,6,7,8,9,10,11];
-       var shuffledIndex = new Array();
-        for(i=0; i<deckIndex.length; i++){
-            var aux = Math.random([0,11]);
-            while(deckIndex[aux]==-1){
-                aux = Math.random([0,11]);
-            }   
-            shuffledIndex[i]=elements[aux];
-            deckIndex[aux] = -1;
-        }
+       for(var i=0; i<this.elements.length; i++){
+            var j = Math.floor(Math.random() * (i+1)); 
+            [this.elements[i], this.elements[j]] = [this.elements[j], this.elements[i]];
+       }
     }
 
     unflipCards(){
