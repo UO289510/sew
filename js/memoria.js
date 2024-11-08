@@ -27,7 +27,7 @@ class Memoria{
         this.secondCard=null;
 
         this.shuffleElements();
-        this.objects = this.createElements();
+        this.createElements();
         this.addEventListeners();
     }
 
@@ -50,7 +50,11 @@ class Memoria{
 
     unflipCards(){
         this.lockBoard=true;
-        setTimeout(this.resetBoard(), 5);
+        setTimeout(() => {
+            this.firstCard.setAttribute("data-state", "");
+            this.secondCard.setAttribute("data-state", "");
+            this.resetBoard();
+        }, 1000);
     }
 
     resetBoard(){
@@ -61,7 +65,8 @@ class Memoria{
     }
 
     checkForMatch(){
-        if(this.firstCard==this.secondCard){
+        if(this.firstCard.getAttribute("data-element")==this.secondCard
+                                                .getAttribute("data-element")){
             this.disableCards();
         }else{
             this.unflipCards();
@@ -81,21 +86,40 @@ class Memoria{
     }
 
     createElements(){
+        var gameBoard = document.querySelector("section");
+
         for(var i=0; i<this.elements.length; i++){
-             this.objects[i] = "<article data-element= '"+this.elements[i].element+"' >"+
-             "<h3> Tarjeta de Memoria </h3>"+"<img src='"+this.elements[i].source+"' alt="+this.elements[i].element+"></article>";
+
+            var article=document.createElement("article");
+            article.setAttribute('data-element', this.elements[i].element);
+            
+            var title=document.createElement("h3");
+            title.textContent="Tarjeta de Memoria";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", this.elements[i].source);
+            image.setAttribute("alt", this.elements[i].element);
+
+            article.appendChild(title);
+            article.appendChild(image);
+
+            gameBoard.appendChild(article);
+            this.objects.push(article);
+        }
+
+
+
+    }
+
+    addEventListeners(){
+        for(var i=0; i<this.objects.length; i++){
+            this.objects[i].onclick = this.flipCard.bind(this.objects[i], this);
         }
     }
 
-    addEventListeners(cards){
-        for(var i=0; i<cards.length; i++){
-            cards[i].onclick = this.flipCard.bind(this, cards[i]);
-        }
-    }
-
-    flipCard(card, game) {
+    flipCard(game) {
             // Primera comprobación: si la tarjeta ya está revelada
-            if (card.getAttribute("data-state") === "revealed") {
+            if (this.getAttribute("data-state") === "revealed") {
                 return;
             }
     
@@ -105,22 +129,22 @@ class Memoria{
             }
     
             // Tercera comprobación: si la tarjeta es la misma que la primera seleccionada
-            if (card === game.firstCard) {
+            if (this === game.firstCard) {
                 return;
             }
     
             // Si ninguna de las condiciones anteriores se cumple, continuamos
             // Modificar el atributo data-state para voltear la tarjeta
-            card.setAttribute("data-state", "flip");
+            this.setAttribute("data-state", "flip");
     
             // Comprobación de si ya había una tarjeta volteada
             if (!game.hasFlippedCard) {
                 // No había ninguna tarjeta volteada
                 game.hasFlippedCard = true;
-                game.firstCard = card; // Almacena la primera tarjeta seleccionada
+                game.firstCard = this; // Almacena la primera tarjeta seleccionada
             } else {
                 // Ya había una tarjeta volteada, esta es la segunda
-                game.secondCard = card; // Almacena la segunda tarjeta seleccionada
+                game.secondCard = this; // Almacena la segunda tarjeta seleccionada
                 game.checkForMatch();   // Comprueba si ambas tarjetas son iguales
             }
     }
