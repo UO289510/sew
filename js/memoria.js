@@ -74,8 +74,11 @@ class Memoria{
     }
 
     disableCards(){
-        this.firstCard.setAttribute('data-state', 'revealed');
-        this.secondCard.setAttribute('data-state', 'revealed');
+
+        setTimeout(() =>{
+            this.firstCard.setAttribute('data-state', 'revealed');
+            this.secondCard.setAttribute('data-state', 'revealed');
+        }, 1000);
         this.resetBoard();
     }
 
@@ -86,29 +89,29 @@ class Memoria{
     }
 
     createElements(){
-        var gameBoard = document.querySelector("section");
+        var gameBoard = document.querySelector("section section");
+        
+        var titulo = document.createElement("h2");
+        titulo.textContent="Juego de Memoria";
+        gameBoard.appendChild(titulo);
 
         for(var i=0; i<this.elements.length; i++){
-
             var article=document.createElement("article");
             article.setAttribute('data-element', this.elements[i].element);
             
-            var title=document.createElement("h3");
-            title.textContent="Tarjeta de Memoria";
+            var name=document.createElement("h3");
+            name.textContent="Tarjeta de Memoria";
 
             var image = document.createElement("img");
             image.setAttribute("src", this.elements[i].source);
             image.setAttribute("alt", this.elements[i].element);
 
-            article.appendChild(title);
+            article.appendChild(name);
             article.appendChild(image);
 
             gameBoard.appendChild(article);
             this.objects.push(article);
         }
-
-
-
     }
 
     addEventListeners(){

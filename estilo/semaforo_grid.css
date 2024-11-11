@@ -1,0 +1,97 @@
+main{
+    width: 40%;
+    height: 20%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5% 3%;
+    align-items: center;
+}
+
+main section{
+    grid-row:none;
+    grid-column:none;
+}
+
+main div {
+    background-color: #000A;
+    border: 5px solid black;
+    aspect-ratio: 1;
+    grid-row: 2;
+    border-radius: 50%;
+}
+
+main h2{
+    grid-row: 1;
+    grid-column: 2 / 4;
+    justify-self: center;
+    padding-inline: 100%;
+}
+
+main button:first-of-type {
+    grid-row: 3;
+    grid-column: 2 / span 1;
+}
+
+main button:nth-of-type(2){
+    grid-row: 3;
+    grid-column: 3 / span 1;
+}
+
+main p{
+    padding-top: none;
+    padding-bottom: none;
+    font-size: larger;
+    grid-row: 4;
+    grid-column: 2 / 4;
+    grid-row: auto;
+    justify-self: center;
+}
+
+@keyframes encendido {
+    from{background-color: #000A;
+        border: 5px solid black;}
+    to{background-color: rgb(255, 28, 28);
+        border: 5px solid rgb(199, 0, 0);}
+}
+
+@keyframes out {
+    from{background-color: rgb(255, 28, 28);
+        border: 5px solid rgb(199, 0, 0);}
+    to{background-color: #000A;
+        border: 5px solid black;}
+}
+
+main.load div:first-of-type{
+    animation-name:encendido;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+}
+
+main.load div:nth-of-type(2){
+    animation-name:encendido;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+main.load div:nth-of-type(3){
+    animation-name:encendido;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+main.load div:nth-of-type(4){
+    animation-name:encendido;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    animation-delay:1.5s;
+}
+
+main.unload div{
+    animation-name:out;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
