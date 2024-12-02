@@ -14,9 +14,10 @@ de las palabras clave del mismo separadas por comas" />
 <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
 
 
+<link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
 <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
-<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 
+<script src="js/noticias.js"></script>
 
 </head>
 
@@ -38,8 +39,22 @@ de las palabras clave del mismo separadas por comas" />
     <p>Estás en: <a href="index.html">Inicio</a> >> Noticias </p>
     
     <main>
-        <h2>Noticias</h2>
-        <p>En desarrollo</p>
+        <section>
+            <h2>Noticias</h2>
+            <h3>Añadir noticias de fichero</h3>
+            <p><input type="file" onchange="noticias.readInputFile(this.files);"></p>
+        </section>
+
+        <section>
+            <h3>Añadir noticia a fichero</h3>
+            <p>Titular: <input type="text" onchange="noticias.readInputFile(this.files);"></p>
+            <p>Cuerpo: <input type="text" onchange="noticias.readInputFile(this.files);"></p>
+            <p>Autor: <input type="text" onchange="noticias.readInputFile(this.files);"></p>
+            <button>Añadir</button>
+        </section>
+            <script>
+                var noticias = new Noticias();
+            </script>
     </main>
 
 </body>

@@ -6,7 +6,6 @@
 <title>F1 Desktop - Index</title>
 <link rel="icon" href="multimedia/imagenes/favicon2.ico">
 
-
 <meta name ="author" content ="Daniel López Fdez" />
 <meta name ="description" content ="index de la pagina web" />
 <meta name ="keywords" content ="f1, formula1" />
@@ -16,12 +15,18 @@
 <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
 <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 
+<style>
+        body{
+                background-position: 0%;
+                background-repeat: no-repeat;
+        }
+</style>
+
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
 <script src="js/fondo.js"></script>
-
 
 </head>
 
@@ -42,12 +47,15 @@
         </header>
 
         <main>
-                <h2>Index</h2>
+
+                <section>
+                        <h2>Index</h2>
+                </section>
+
                 <script>
-                        
-
+                        const fondo = new Fondo("Qatar", "Doha", "Losail International Circuit");
+                        fondo.cargarImagen();
                 </script>
-
         </main>
 
 </body>
