@@ -12,7 +12,7 @@ class Fondo{
     // Qatar
 
     cargarImagen(){
-        var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+        var flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         $.getJSON(flickrAPI,
             {
                 tags: "Grand Prix of Qatar, Losail International Circuit, Losail, Qatar",

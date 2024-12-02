@@ -17,7 +17,7 @@ class Pais{
     this.tipo = "&mode=xml";
     this.unidades = "&units=metric";
     this.idioma = "&lang=es";
-    this.url = "http://api.openweathermap.org/data/2.5/forecast?q="+this.ciudad+this.tipo+this.unidades+this.idioma+"&APPID="+this.apikey;
+    this.url = "https://api.openweathermap.org/data/2.5/forecast?q="+this.ciudad+this.tipo+this.unidades+this.idioma+"&APPID="+this.apikey;
   }  
   
   rellenar(){
@@ -124,7 +124,7 @@ class Pais{
 
             if(symbol){
               var imagen = document.createElement("img");
-              imagen.src = "http://openweathermap.org/img/wn/"+symbol+"@2x.png";
+              imagen.src = "https://openweathermap.org/img/wn/"+symbol+"@2x.png";
             }
             
             elemento.appendChild(imagen);
@@ -285,7 +285,7 @@ class Pais{
 
           if(media.symbol){
             var imagen = document.createElement("img");
-            imagen.src = "http://openweathermap.org/img/wn/"+media.symbol+"@2x.png";
+            imagen.src = "https://openweathermap.org/img/wn/"+media.symbol+"@2x.png";
             articulo.appendChild(imagen);
           }
 
