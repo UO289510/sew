@@ -31,6 +31,7 @@ article h3 {
     flex-direction: row;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 article img{
@@ -46,10 +47,6 @@ article[data-state='revealed'] img{
     transform: none;
     transition: none;
     opacity: 1;
-}
-
-article h3{
-    color: white;
 }
 
 section section{

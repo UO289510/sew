@@ -12,7 +12,28 @@ class Fondo{
     // Qatar
 
     cargarImagen(){
-        var flickr
+        var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+        $.getJSON(flickrAPI,
+            {
+                tags: "Grand Prix of Qatar, Losail International Circuit, Losail, Qatar",
+                tagmode: "all",
+                extras: "date-upload",
+                format: "json"
+            })
+            .done(function(data) {
+                $.each(data.items, function(i, item) {
+                    var imageUrl = item.media.m;
+                    imageUrl = imageUrl.replace("_m", "_b");                    
+                    //$("<img />").attr("src", item.media.m).appendTo("main section").attr("alt", item.media.m).appendTo("main section");
+                    if(imageUrl){
+                        $("body").css("background-image", "url("+imageUrl+")");
+                        $("body").css("background-size", "cover");
+                        $("body").css("min-height", "100vh");
+                    }
+                    if(i==3)
+                        return false;
+                });
+            });
     }
 
 }

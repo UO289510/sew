@@ -40,13 +40,13 @@ main button:nth-of-type(2){
 }
 
 main p{
-    padding-top: none;
-    padding-bottom: none;
     font-size: larger;
     grid-row: 4;
     grid-column: 2 / 4;
     grid-row: auto;
     justify-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 @keyframes encendido {
