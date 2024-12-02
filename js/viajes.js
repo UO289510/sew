@@ -2,7 +2,6 @@ class Viajes {
 
     constructor() {
         navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
-        this.verTodo();
     }
 
     getPosicion(posicion){
@@ -14,6 +13,7 @@ class Viajes {
         this.precisionAltitud = posicion.coords.altitudeAccuracy;
         this.rumbo = posicion.coords.heading;
         this.velocidad = posicion.coords.speed;
+        this.verTodo();
     }
 
     verErrores(error){
