@@ -14,6 +14,8 @@ class Viajes {
         this.rumbo = posicion.coords.heading;
         this.velocidad = posicion.coords.speed;
         this.verTodo();
+        this.getMapaEstaticoMapBox();
+        this.getMapaDinamicoMapBox();
     }
 
     verErrores(error){
@@ -56,20 +58,60 @@ class Viajes {
         document.querySelector("main").appendChild(ubicacion);
     }
 
-    getMapaEstaticoGoogle(){
+    getMapaEstaticoMapBox(){
+
         var mapa = document.createElement("img");
+        var url = "https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/";
+        // var marcador = "pin-s-Point+FF0000("+this.longitud+","+this.latitud+")";
+        var marcador = "geojson(%7B%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B"
+                        +"%22marker-color%22%3A%22%23ff0000%22%2C%22marker-size%22%3A%22medium%22%2C%22"
+                        +"marker-symbol%22%3A%22circle%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22"
+                        +"Point%22%2C%22coordinates%22%3A%5B"+this.longitud+"%2C"+this.latitud+"%5D%7D%7D)";
+        var zoom = 15;
+        var tamaño = "800x600";
+        var apiKey = "?access_token=pk.eyJ1IjoidW8yODk1MTAiLCJhIjoiY200OG93MnNnMDI2YjJpcjRieXM5cDUybSJ9.HJAZajuwP81PRQqybk2eZw";
 
-        var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
-        var url = "https://maps.googleapis.com/maps/api/staticmap?";
-        var centro = "center=" + this.latitud + "," + this.longitud;
-        var zoom = "&zoom=15";
-        var tamaño = "&size=800x600";
-        var marcador = "&markers=color:red%7Clabel:S%7C" + this.latitud + "," + this.longitud;
-        var sensor = "&sensor=false";
+        var urlMapa = url+marcador+"/"+this.longitud+","+this.latitud+","+zoom+"/"+tamaño+apiKey;
 
-        this.imageMapa = url + centro + zoom + tamaño + marcador + sensor;
-        mapa.setAttribute("src", imagenMapa);
-        mapa.setAttribute("alt", "Mapa de Google");
+        mapa.setAttribute("src", urlMapa);
+        mapa.setAttribute("alt", "Mapa de MapBox");
         document.querySelector("main").appendChild(mapa);
+    }
+
+    getMapaDinamicoMapBox(){
+
+        var div = document.createElement("div");
+        document.querySelector("main").appendChild(div);
+        
+        mapboxgl.accessToken = "pk.eyJ1IjoidW8yODk1MTAiLCJhIjoiY200OG93MnNnMDI2YjJpcjRieXM5cDUybSJ9.HJAZajuwP81PRQqybk2eZw";
+        
+        const map = new mapboxgl.Map({
+            container:div,
+            style: 'mapbox://styles/mapbox/streets-v12',
+            zoom: 15,
+            center: [this.longitud, this.latitud],
+            attributionControl: false
+        });
+
+        map.addControl(new mapboxgl.NavigationControl({
+            showZoom: true,
+            showCompass: false
+        }), 'top-left');
+
+        new mapboxgl.Marker({color:'red'})
+        .setLngLat([this.longitud, this.latitud])
+        .addTo(map);
+
+        map.resize();
+
+        // map.on('load', () =>{
+        //     map.resize();
+        // });
+
+        // map.addControl(new mapboxgl.NavigationControl({
+        //     showCompass: true,
+        //     showZoom: true
+        // }));
+
     }
 }

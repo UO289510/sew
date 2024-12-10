@@ -19,13 +19,15 @@ class Noticias{
         var tipoTexto = /text.*/;
         var main = document.querySelector("main");
         
+        // Solo se procesan archivos de texto
         if (this.archivo.type.match(tipoTexto)) {
             var section = document.createElement("section");
             var lector = new FileReader();
     
             lector.onload = function (evento) {
                 var lineas = lector.result.split("\n");
-    
+                
+                // Se procesa cada linea no vacia
                 lineas.forEach(linea => {
                     if (linea.trim() === "") return;
     

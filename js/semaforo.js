@@ -84,11 +84,17 @@ class Semaforo{
         bReaccion.disabled = true;
         var bArranque = document.querySelector("button:first-of-type");
         bArranque.disabled = false;
+        this.createRecordFrom();
     }
 
     getRandomInt(){
         const minCeiled = Math.ceil(0);
         const maxFloored = Math.floor(this.levels.length);
         return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+    }
+
+
+    createRecordFrom(){
+
     }
 }
