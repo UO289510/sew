@@ -13,10 +13,15 @@
 de las palabras clave del mismo separadas por comas" />
 <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
 
-
 <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
 <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+<!-- <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css"> -->
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+
+<script src="js/circuito.js"></script>
 
 </head>
 
@@ -40,8 +45,13 @@ de las palabras clave del mismo separadas por comas" />
     
     <main>
         <h2>Circuito</h2>
-        <p>En desarrollo</p>
-    
+        <p>Cargar XML: <input type="file" onchange="circuito.leerArchivoXML(this.files);"></p>
+        <p>Cargar KML: <input type="file" onchange="circuito.leerArchivosKML(this.files);" multiple></p>
+        <p>Cargar SVG: <input type="file" onchange="circuito.leerArchivoSVG(this.files);"></p>
+
+        <script>
+            var circuito = new Circuito();
+        </script>
     </main>
 </body>
 </html>
