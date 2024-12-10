@@ -94,29 +94,29 @@ class Kml(object):
         coord = coord[1:len(coord)-1]
         coord = coord.split(',')
 
-        long = coord[0].split(':')[1]
-        lat = coord[1].split(':')[1]
+        lat = coord[0].split(':')[1]
+        long = coord[1].split(':')[1]
         alt = coord[2].split(':')[1].split("'")[1]
 
-        long = self.extraerCoordenadas(long)
         lat = self.extraerCoordenadas(lat)
+        long = self.extraerCoordenadas(long)
         alt = float(alt)
 
         #print(lat)
         #print(long)
         #print(alt)
 
-        long = self.convertirCoordenadas(long)
         lat = self.convertirCoordenadas(lat)
+        long = self.convertirCoordenadas(long)
 
-        self.addTramo("0" ,"1" ,lat ,long ,0 ,'relativeToGround')
+        self.addTramo("0" ,"1" ,lat ,long ,alt ,'relativeToGround')
 
         #print(lat)
         #print(long)
         #print(alt)
 
-        self.coordenadas+=""+str(lat)+","+str(long)+","+str(0)+"\n"
-        self.salida=""+str(lat)+","+str(long)+","+str(0)+"\n"
+        self.coordenadas+=""+str(lat)+","+str(long)+","+str(alt)+"\n"
+        self.salida=""+str(lat)+","+str(long)+","+str(alt)+"\n"
 
 
 
@@ -128,17 +128,17 @@ class Kml(object):
 
         for dato in datos:
             dato=dato.split(',')
-            long = dato[1].split(":")[1]
-            lat = dato[2].split(":")[1]
+            lat = dato[1].split(":")[1]
+            long = dato[2].split(":")[1]
             alt = dato[3].split(":")[1].split("'")[1]
             sec = dato[4].split(":")[1]
 
-            long = self.convertirCoordenadas(self.extraerCoordenadas(long))
             lat = self.convertirCoordenadas(self.extraerCoordenadas(lat))
+            long = self.convertirCoordenadas(self.extraerCoordenadas(long))
             alt = float(alt)
 
-            self.addTramo(str(count), sec, lat, long, 0, 'relativeToGround')
-            self.coordenadas+=""+str(lat)+","+str(long)+","+str(0)+"\n"
+            self.addTramo(str(count), sec, lat, long, alt, 'relativeToGround')
+            self.coordenadas+=""+str(lat)+","+str(long)+","+str(alt)+"\n"
             count+=1
         self.coordenadas+=self.salida.rstrip()
 
@@ -164,7 +164,7 @@ class Kml(object):
         #print(result)
 
 def main():
-    nombreKML = "prueba.kml"
+    nombreKML = "circuito.kml"
 
     nuevoKML = Kml()
 
