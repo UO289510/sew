@@ -110,6 +110,11 @@ h1 :visited{
     /*background-color se hereda de header*/
 }
 
+/*Especifidad 001*/
+ul {
+    font-weight: bold;
+}
+
 /* Especifidad 003*/
 ul li::marker{
     content:"►  ";
@@ -184,6 +189,7 @@ td{
     border: 1px solid #253452;
 }
 
+/*Especifidad 010*/
 .active{
     color:#253452;
     background-color: white;
@@ -195,15 +201,20 @@ td{
     border-bottom:0.1px solid transparent;
 }
 
+/*Especifidad 012*/
 nav a:hover{
     color:#253452;
     background-color: #E5E1E4;
     font-size:x-large;
 }
 
-
 @media (465px <= width <= 799px){
     header ~ p{
         display:none;
     }
+}
+
+main>div {
+    width: 500px;
+    height:500px;
 }
