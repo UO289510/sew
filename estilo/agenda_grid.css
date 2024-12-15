@@ -14,7 +14,7 @@ button {
     font-size:1em;
 }
 
-section {
+article>section {
     display: flex;
     flex-direction:column;
     grid-template-columns: 1fr;

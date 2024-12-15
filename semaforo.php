@@ -4,10 +4,11 @@
 <head>
     <meta charset ="UTF-8" />
     <link rel="icon" href="multimedia/imagenes/favicon2.ico">
-    
+    <title>F1 Desktop - Semáforo</title>
+
     <meta name ="author" content="Daniel López Fdez" />
     <meta name ="description" content="Aquí se podrá jugar al juego del semaforo"/>
-    <meta name ="keywords" content="..." />
+    <meta name ="keywords" content="semaforo, juegos, juego, reflejos, rápidez" />
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" type="text/css" href="estilo/estilos.css"/>

@@ -179,7 +179,6 @@ th {
     padding-right: 10px;
     padding-left: 10px;
     background-color:#E5E1E4;
-
     /*color se hereda de body*/
 }
 /*Especifidad 001*/
@@ -240,7 +239,7 @@ main>article img {
 }
 
 main>article button {
-    position: absolute;
+  position: absolute;
   width: 2em;
   height: 2em;
   padding: 0.5em;
@@ -249,11 +248,13 @@ main>article button {
   z-index: 10;
   cursor: pointer;
   background-color: #fff;
+  color: black;
   font-size: 1em;
   display: flex;
   flex-direction: column;
   align-items:center;
   justify-content: center;
+
 }
 
 main>article button:active{
@@ -278,11 +279,11 @@ overflow-y: hidden;
 
 } */
 
-main>section:nth-of-type(2) {
+/* main>section:nth-of-type(2) {
     display:grid;
     grid-template-columns: repeat(3, 0.7fr);
     gap: 5%;
-}
+} */
 
 
 
