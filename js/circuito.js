@@ -140,7 +140,7 @@ class Circuito{
     
                 mapboxgl.accessToken = "pk.eyJ1IjoidW8yODk1MTAiLCJhIjoiY200OG93MnNnMDI2YjJpcjRieXM5cDUybSJ9.HJAZajuwP81PRQqybk2eZw";
                 const map = new mapboxgl.Map({
-                    container:container,
+                    container:mapa,
                     style: 'mapbox://styles/mapbox/streets-v12',
                     zoom: 15,
                     center: [centroLat, centroLong],
@@ -178,7 +178,9 @@ class Circuito{
                 };
                 lector.readAsText(this.archivo);
     
-                var container = document.createElement("div");
+                var mapa = document.createElement("div");
+                var container = document.createElement("section");
+                container.appendChild(mapa);
                 document.querySelector("main").appendChild(container);
 
             }else {

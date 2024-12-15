@@ -62,7 +62,7 @@ class Semaforo{
 
     stopReaction(){
         this.clic_moment = Date.now();
-        var tReaction = this.clic_moment - this.unload_moment;
+        var tReaction = (this.clic_moment - this.unload_moment).toFixed(3);
         
         var mainScreen = document.querySelector("main");
         
@@ -96,5 +96,67 @@ class Semaforo{
 
     createRecordFrom(){
 
+        var section = document.createElement("section");
+
+        var title = document.createElement("h3");
+        title.textContent = "REGISTRA TU PUNTUACIÓN";
+        section.appendChild(title);
+
+        var formulario = document.createElement("form");
+        formulario.setAttribute("action", "#");
+        formulario.setAttribute("method", "post");
+        formulario.setAttribute("name", "formulario");
+        section.appendChild(formulario);
+
+
+        var pNombre = document.createElement("p");
+        pNombre.textContent = "Nombre: ";
+        var nombre = document.createElement("input");
+        pNombre.appendChild(nombre);
+        nombre.setAttribute("type", "text");
+        nombre.setAttribute("name", "nombre");
+        formulario.appendChild(pNombre);
+
+        var pApellidos = document.createElement("p");
+        pApellidos.textContent = "Apellidos: ";
+        var apellidos = document.createElement("input");
+        pApellidos.appendChild(apellidos);
+        apellidos.setAttribute("type", "text");
+        apellidos.setAttribute("name", "apellidos");
+        formulario.appendChild(pApellidos);
+
+        var pNivel = document.createElement("p");
+        pNivel.textContent = "Nivel: ";
+        var nivel = document.createElement("input");
+        pNivel.appendChild(nivel);
+        nivel.setAttribute("type", "number");
+        nivel.setAttribute("name", "nivel");
+        nivel.setAttribute("value", this.difficulty);
+        nivel.setAttribute("readonly", true);
+        formulario.appendChild(pNivel);
+        
+        var pReaccion = document.createElement("p");
+        pReaccion.textContent = "Tiempo (en segundos): ";
+        var reaccion = document.createElement("input");
+        pReaccion.appendChild(reaccion);
+        reaccion.setAttribute("type", "number");
+        reaccion.setAttribute("step", "0.001");
+        reaccion.setAttribute("name", "reaccion");
+        reaccion.setAttribute("value", ((this.clic_moment - this.unload_moment)/1000).toFixed(3));
+        reaccion.setAttribute("readonly", true);
+        formulario.appendChild(pReaccion);
+
+        // var pAñadir = document.createElement("p");
+        var añadir = document.createElement("input");
+        // pAñadir.appendChild(añadir);
+        añadir.setAttribute("type","submit");
+        añadir.setAttribute("name", "añadir");
+        añadir.setAttribute("value", "Añadir");
+        // formulario.appendChild(pAñadir);
+        formulario.appendChild(añadir);
+        section.appendChild(formulario);
+
+
+        document.querySelector("main").appendChild(section);
     }
 }

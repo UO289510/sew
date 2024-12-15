@@ -13,7 +13,7 @@ class Viajes {
         this.precisionAltitud = posicion.coords.altitudeAccuracy;
         this.rumbo = posicion.coords.heading;
         this.velocidad = posicion.coords.speed;
-        this.verTodo();
+        //this.verTodo();
         this.getMapaEstaticoMapBox();
         this.getMapaDinamicoMapBox();
     }
@@ -68,20 +68,22 @@ class Viajes {
                         +"marker-symbol%22%3A%22circle%22%7D%2C%22geometry%22%3A%7B%22type%22%3A%22"
                         +"Point%22%2C%22coordinates%22%3A%5B"+this.longitud+"%2C"+this.latitud+"%5D%7D%7D)";
         var zoom = 15;
-        var tamaño = "800x600";
+        var tamaño = "500x500";
         var apiKey = "?access_token=pk.eyJ1IjoidW8yODk1MTAiLCJhIjoiY200OG93MnNnMDI2YjJpcjRieXM5cDUybSJ9.HJAZajuwP81PRQqybk2eZw";
 
         var urlMapa = url+marcador+"/"+this.longitud+","+this.latitud+","+zoom+"/"+tamaño+apiKey;
 
         mapa.setAttribute("src", urlMapa);
         mapa.setAttribute("alt", "Mapa de MapBox");
-        document.querySelector("main").appendChild(mapa);
+        document.querySelector("main section").appendChild(mapa);
     }
 
     getMapaDinamicoMapBox(){
 
         var div = document.createElement("div");
-        document.querySelector("main").appendChild(div);
+        var contenedor = document.createElement("section");
+        contenedor.appendChild(div);
+        document.querySelector("main section").appendChild(contenedor);
         
         mapboxgl.accessToken = "pk.eyJ1IjoidW8yODk1MTAiLCJhIjoiY200OG93MnNnMDI2YjJpcjRieXM5cDUybSJ9.HJAZajuwP81PRQqybk2eZw";
         
@@ -103,15 +105,43 @@ class Viajes {
         .addTo(map);
 
         map.resize();
+    }
 
-        // map.on('load', () =>{
-        //     map.resize();
-        // });
+    cargarCarrusel(){
 
-        // map.addControl(new mapboxgl.NavigationControl({
-        //     showCompass: true,
-        //     showZoom: true
-        // }));
+        const slides = document.querySelectorAll('img');
+                
+        const nextSlide = document.querySelector('article>button:nth-of-type(1)');
 
+        let curSlide = 3;
+        let maxSlide = slides.length-1;
+                
+        nextSlide.addEventListener('click', function(){
+            if(curSlide === maxSlide){
+                curSlide = 0;
+            }else{
+                curSlide++;
+            }
+
+            slides.forEach((slide, indx) => {
+                var trans = 100 * (indx - curSlide);
+                $(slide).css('transform', 'translateX(' + trans + '%)')
+            });
+        });
+                
+        const prevSlide = document.querySelector('article>button:nth-of-type(2)');
+
+        prevSlide.addEventListener('click', function(){
+            if(curSlide === 0){
+                curSlide = maxSlide;
+            } else {
+                curSlide--; 
+            }
+
+            slides.forEach((slide, indx) => {
+                var trans = 100 * (indx - curSlide);
+                $(slide).css('transform', 'translateX('+ trans + '%)')
+            });
+        });
     }
 }

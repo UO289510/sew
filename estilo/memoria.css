@@ -49,6 +49,10 @@ section>article[data-state='revealed'] img{
     opacity: 1;
 }
 
+section>section:first-child{
+    grid-column: 2;
+}
+
 section section{
     display:grid;
     grid-template-columns: repeat(4, 125px);

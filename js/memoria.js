@@ -2,7 +2,9 @@ class Memoria{
 
     deck = [];
     objects = [];
-
+    numberOfMatches=0;
+    startMoment = null;
+    endMoment = null;
 
     elements = [
         {element: "RedBull", source:"multimedia/imagenes/RedBull.svg"},
@@ -29,6 +31,12 @@ class Memoria{
         this.shuffleElements();
         this.createElements();
         this.addEventListeners();
+        this.gameStart();
+    }
+
+    gameStart(){
+        window.alert("Pulsa o haz click sobre las tarjetas para encontrar todas las parejas en el menor tiempo posible. El cronometro se activa en cuanto se cierra esta ventana.");
+        this.startMoment=Date.now();
     }
 
     showCards(){
@@ -51,8 +59,8 @@ class Memoria{
     unflipCards(){
         this.lockBoard=true;
         setTimeout(() => {
-            this.firstCard.setAttribute("data-state", "");
-            this.secondCard.setAttribute("data-state", "");
+            this.firstCard.setAttribute("data-state", "hidden");
+            this.secondCard.setAttribute("data-state", "hidden");
             this.resetBoard();
         }, 1000);
     }
@@ -68,18 +76,19 @@ class Memoria{
         if(this.firstCard.getAttribute("data-element")==this.secondCard
                                                 .getAttribute("data-element")){
             this.disableCards();
+            this.numberOfMatches++;
+            this.resetBoard();
         }else{
             this.unflipCards();
         }
     }
 
     disableCards(){
-
         setTimeout(() =>{
             this.firstCard.setAttribute('data-state', 'revealed');
             this.secondCard.setAttribute('data-state', 'revealed');
+            this.resetBoard();
         }, 1000);
-        this.resetBoard();
     }
 
     showElems(){
@@ -90,9 +99,10 @@ class Memoria{
 
     createElements(){
         var gameBoard = document.querySelector("section section");
-        
+
         var titulo = document.createElement("h2");
         titulo.textContent="Juego de Memoria";
+
         gameBoard.appendChild(titulo);
 
         for(var i=0; i<this.elements.length; i++){
@@ -116,20 +126,33 @@ class Memoria{
 
     addEventListeners(){
         for(var i=0; i<this.objects.length; i++){
+            this.objects[i].onclick = null;
             this.objects[i].onclick = this.flipCard.bind(this.objects[i], this);
         }
+
+    }
+
+    gameFinished(){
+        if(this.numberOfMatches==6){
+            this.endMoment=Date.now();
+            return true;
+        }
+        return false;
     }
 
     flipCard(game) {
+            
+            if (game.lockBoard) {
+                return;
+            }   
+
             // Primera comprobación: si la tarjeta ya está revelada
             if (this.getAttribute("data-state") === "revealed") {
                 return;
             }
     
             // Segunda comprobación: si el tablero está bloqueado
-            if (game.lockBoard) {
-                return;
-            }
+            
     
             // Tercera comprobación: si la tarjeta es la misma que la primera seleccionada
             if (this === game.firstCard) {
@@ -148,8 +171,16 @@ class Memoria{
             } else {
                 // Ya había una tarjeta volteada, esta es la segunda
                 game.secondCard = this; // Almacena la segunda tarjeta seleccionada
+                game.lockBoard = true;
                 game.checkForMatch();   // Comprueba si ambas tarjetas son iguales
             }
+            if(game.gameFinished()){
+                
+                setTimeout(() =>{
+                    window.alert("¡Has ganado! Has logrado un tiempo de "+ tiempo +"s");             
+                }, 500);
+                var tiempo = game.endMoment-game.startMoment;
+                tiempo = (tiempo/1000).toFixed(3);
+            }
     }
-
 }
