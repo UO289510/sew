@@ -30,7 +30,11 @@ class Circuito{
                 
                 var doc = xml[0];
                 var firstNode = doc.firstChild;
-    
+                if(firstNode.firstChild == null){
+                    firstNode = firstNode.nextSibling;
+                }
+
+
                 const contenido = function recorre(node){
                     
                     var contenedorNodo = document.createElement("ul");

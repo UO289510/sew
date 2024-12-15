@@ -129,7 +129,6 @@ class Memoria{
             this.objects[i].onclick = null;
             this.objects[i].onclick = this.flipCard.bind(this.objects[i], this);
         }
-
     }
 
     gameFinished(){

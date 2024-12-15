@@ -17,13 +17,15 @@ class Agenda{
             url: this.url,
             method: 'GET',
             success: function(datos) {
-                const raceTable = datos.MRData.RaceTable;
-                const races = raceTable.Races;
-                const articulo = document.createElement("article"); 
-                
+                var raceTable = datos.MRData.RaceTable;
+                var races = raceTable.Races;
+                var section = document.createElement("section");
+                var articulo = document.createElement("article"); 
+                section.appendChild(articulo);
+
                 races.forEach((race, index) => {
                     
-                    const container = document.createElement("section");
+                    var container = document.createElement("section");
                     
                     var fecha = document.createElement("h3");
                     fecha.textContent=race.date +"   "+race.time;
@@ -63,7 +65,7 @@ class Agenda{
                     
                     articulo.appendChild(container);
                 });
-                document.querySelector("main").appendChild(articulo);
+                document.querySelector("main").appendChild(section);
             },
             error: function() {
           $("h3").html("¡Tenemos problemas! No puedo obtener XML de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
