@@ -12,6 +12,7 @@
     
     <link rel="stylesheet" type="text/css" href="estilo/estilos.css"/>
     <link rel="stylesheet" type="text/css" href="estilo/semaforo_grid.css"/>
+    
     <script src="js/semaforo.js"></script>
 
 </head>
@@ -20,18 +21,56 @@
 
     <?php
         
-        class Vehiculo{
+        class Record{
+            private $db;
             function __construct(){
                 $server = "localhost";
                 $user = "DBUSER2024";
                 $pass = "DBPSWD2024";
                 $dbname = "records";
             }
-        
-        
-        
-        }
 
+            function addToTable($nombre, $apellidos, $nivel, $reaccion){
+                
+                $this->db = new mysqli("localhost","DBUSER2024","DBPSWD2024","records");
+                if($this->db->connect_errno){
+                    echo "Error de conexión: " . $this->db->connect_error;
+                }
+
+                $consultaPre = $this->db->prepare("INSERT INTO registro (Nombre, Apellidos, Nivel, Tiempo) VALUES (?,?,?,?)");
+                $consultaPre->bind_param("ssid", $nombre, $apellidos, $nivel, $reaccion);
+                $consultaPre->execute();
+                $consultaPre->close();
+            }
+
+            function getTopTen($nivel){
+
+                $this->db = new mysqli("localhost","DBUSER2024","DBPSWD2024","records");
+                if($this->db->connect_errno){
+                    echo "Error de conexión: " . $this->db->connect_error;
+                }
+
+                $nivel = (int)$nivel;
+
+                $result = $this->db->query("SELECT Nombre, Apellidos, Tiempo FROM registro WHERE nivel=$nivel ORDER BY Tiempo DESC LIMIT 10");
+                
+                $html = "";
+                $html .= "<ol>Nombre - Apellidos - Tiempo";
+
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        $html .= "<li>" . $row['Nombre'] . " - " . $row['Apellidos'] . " - " . $row['Tiempo'] . "</li>";
+                    }
+                } else {
+                    $html .= "<li>No hay registros para el nivel especificado.</li>";
+                }
+            
+                $html .= "</ol>"; 
+
+                echo $html ;
+
+            }
+        }
     ?>
 
     <header>
@@ -44,7 +83,7 @@
                 <a href="calendario.html">Calendario</a>
                 <a href="metereologia.html">Metereología</a>
                 <a href="circuito.html">Circuito</a>
-                <a href="viajes.html">Viajes</a>
+                <a href="viajes.php">Viajes</a>
                 <a class="active" href="juegos.html"><span class="active">Juegos</span></a>
             </nav>
         </nav>
@@ -56,7 +95,7 @@
         <h2>Juegos</h2>
         <nav>
             <a href="memoria.html">Memoria</a>
-            <a href="semaforo.html">Semaforo</a>
+            <a href="semaforo.php">Semaforo</a>
         </nav>
     </section>
 
@@ -64,7 +103,14 @@
         <script>
             var semaforo = new Semaforo();
         </script>
-
+        
+        <?php
+             if(count($_POST)>0){
+                $record = new Record();
+                $record->addToTable($_POST["nombre"],$_POST["apellidos"],$_POST["nivel"],$_POST["reaccion"]);
+                $record->getTopTen($_POST["nivel"]);
+            }
+        ?>
     </main>
 
 

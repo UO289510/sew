@@ -137,7 +137,6 @@ ul ul > li::marker{
 
 /*Especifidad 003*/
 ol li::marker{
-    content:counter(list-item, lower-roman)".  ";
     font-size:larger;
     font-weight:bolder;
     color:#253452;
@@ -214,7 +213,81 @@ nav a:hover{
     }
 }
 
-main>div {
+/*Especifidad 003*/
+main section>div {
     width: 500px;
     height:500px;
+}
+
+main>article {
+    width: 100%;
+    max-width: 100vh;
+    height: 60vh;
+    position:relative;
+    overflow:hidden;
+    border-radius:1em;
+    margin:auto;
+}
+
+main>article img {
+    width:100%;
+    max-width:100vh;
+    height:auto;
+    position:absolute;
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius:0.5em;
+}
+
+main>article button {
+    position: absolute;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+main>article button:active{
+    transform:scale(1.1);
+}
+
+main>article button:nth-of-type(1){
+    top:50%;
+    right: 2%;
+}
+
+main>article button:nth-of-type(2){
+    top:50%;
+    left:2%;
+}
+
+/* section:nth-of-type(2){
+width: 14em;
+height:40em;
+position:relative;
+overflow-y: hidden;
+
+} */
+
+main>section:nth-of-type(2) {
+    display:grid;
+    grid-template-columns: repeat(3, 0.7fr);
+    gap: 5%;
+}
+
+
+
+main>section:nth-of-type(2) article h3,
+main>section:nth-of-type(2) article p{
+    text-align: center;
+    align-items: center;
 }
